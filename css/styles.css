@@ -1,0 +1,52 @@
+/* misc element styling */
+.jumbotron h1,
+.jumbotron p.quote,
+.jumbotron p.author {
+	text-align: center;
+	color: #eee;
+}
+
+/* navbar */
+.fire-red {
+	color: #d9534f;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+/* jumbotron */
+
+.jumbotron {
+	background: url('../img/ignite.jpg');
+	background-size: cover;
+	height: 900px;
+}
+
+/* quote & author row */
+.quote-wrapper {
+	margin: 20px 0 10px 0;
+}
+
+p.quote {
+	font-size: 30px;
+}
+
+/* ignite button */
+#btn-ignite {
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+.fire-white {
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+
+	.jumbotron {
+		background: url('../img/ignite_sm.jpg') center center no-repeat;
+		background-size: cover;
+	}
+
+}
