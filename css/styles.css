@@ -20,7 +20,8 @@
 .jumbotron {
 	background: url('../img/ignite.jpg');
 	background-size: cover;
-	height: 900px;
+	height: 93vh;
+	margin-bottom: 0;
 }
 
 /* quote & author row */

@@ -22,7 +22,10 @@ var quotes = [
 	['There are two ways of spreading light: to be the candle or the mirror that reflects it.', 'Edith Wharton'],
 	['Memories of our lives, of our work and our deeds will continue in others.', 'Rosa Parks'],
 	['No matter what people tell you, words and ideas can change the world.', 'Robin Williams'],
-	['I believe in living today. Not in yesterday, nor in tomorrow.', 'Loretta Young']
+	['I believe in living today. Not in yesterday, nor in tomorrow.', 'Loretta Young'],
+	['if you cannot do great things, do the small things in a great way.', 'Napoleaon Hilf'],
+	['Be willing to be a beginner every single morning.', 'Meister Eckhat']
+
 ];
 
 // ** - indicates code hasn't been written yet
