@@ -21,6 +21,8 @@ var quotes = [
 	['A hero is someone who has given his or her life to something bigger than oneself.', 'Joseph Campbell'],
 	['There are two ways of spreading light: to be the candle or the mirror that reflects it.', 'Edith Wharton'],
 	['Memories of our lives, of our work and our deeds will continue in others.', 'Rosa Parks'],
+	['The only way to do great work is to love what you do.', 'Steve Jobs'],
+    ['Just don’t give up trying to do what you really want to do. Where there’s love and inspiration, I don’t think you can go wrong.', 'Ella Jane Fitzgerald']
 	['No matter what people tell you, words and ideas can change the world.', 'Robin Williams'],
 	['I believe in living today. Not in yesterday, nor in tomorrow.', 'Loretta Young']
 ];
