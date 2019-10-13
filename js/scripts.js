@@ -21,6 +21,11 @@ var quotes = [
 	['A hero is someone who has given his or her life to something bigger than oneself.', 'Joseph Campbell'],
 	['There are two ways of spreading light: to be the candle or the mirror that reflects it.', 'Edith Wharton'],
 	['Memories of our lives, of our work and our deeds will continue in others.', 'Rosa Parks'],
+	['The only way to do great work is to love what you do.', 'Steve Jobs'],
+	['If you don’t love what you do, you won’t do it with much conviction or passion.', 'Mia Hamm'],
+	['If you feel like there’s something out there that you’re supposed to be doing, if you have a passion for it, then stop wishing and  just do it.', 'Wanda Sykes'],
+	['Always remember, you have within you the strength, the patience, and the passion to reach for the stars to  change the world.', 'Harriet Tubman'],
+    ['Just don’t give up trying to do what you really want to do. Where there’s love and inspiration, I don’t think you can go wrong.', 'Ella Jane Fitzgerald']
 	['No matter what people tell you, words and ideas can change the world.', 'Robin Williams'],
 	['I believe in living today. Not in yesterday, nor in tomorrow.', 'Loretta Young']
 ];
