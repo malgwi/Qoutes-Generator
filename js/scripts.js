@@ -23,6 +23,9 @@ var quotes = [
 	['Memories of our lives, of our work and our deeds will continue in others.', 'Rosa Parks'],
 	['No matter what people tell you, words and ideas can change the world.', 'Robin Williams'],
 	['I believe in living today. Not in yesterday, nor in tomorrow.', 'Loretta Young']
+	['Let us always meet each other with smile for the smile is the beginning of love.', 'Mother Teresa']
+	['Your smile will give you a positive countenance that will make people feel comfortable around you.', 'Lee brown']
+	['Dare, dream, dance, smile, and sing loudly! And have faith that love is an unstoppable force!', 'Suzanne Brockman']
 ];
 
 // ** - indicates code hasn't been written yet
