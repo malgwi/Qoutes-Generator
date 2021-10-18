@@ -1,5 +1,6 @@
-//Quotes array is an arrar of arrays. First element of nested array is a quote, second element is the author.
-var quotes = [
+// import './quotes.js';
+
+const quotes = [
 	['The best preparation for tomorrow is doing your best today.', 'H. Jackson Brown, Jr.'],
 	['The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.', 'Helen Keller'],
 	['I can\'t change the direction of the wind, but I can adjust my sails to always reach my destination.', 'Jimmy Dean'],
@@ -25,8 +26,8 @@ var quotes = [
 	['I believe in living today. Not in yesterday, nor in tomorrow.', 'Loretta Young'],
 	['All I can remember were those lonely nights when i was defacing those insecure websites.', 'Bynalab'],
 	['It is nice to be important, but it\'s more important to be nice.', 'John Templeton'],
+	['I\'m learning to accept myself. I\'m still in the process of learning to love who I am. And it\'s been really refreshing and really nice to be able to do that and be okay. I think my fans have brought that out in me.', 'Dua Lipa'],
 ];
-
 
 // ** - indicates code hasn't been written yet
 
