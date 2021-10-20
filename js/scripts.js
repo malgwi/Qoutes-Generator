@@ -1,13 +1,14 @@
-//Quotes array is an arrar of arrays. First element of nested array is a quote, second element is the author.
-var quotes = [
-	['The best preparation for tomorrow is doing your best today.','H. Jackson Brown, Jr.'],
-	['The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.','Helen Keller'],
-	['I can\'t change the direction of the wind, but I can adjust my sails to always reach my destination.','Jimmy Dean'],
-	['Start by doing what\'s necessary; then do what\'s possible; and suddenly you are doing the impossible.','Francis of Assisi'],
+// import './quotes.js';
+
+const quotes = [
+	['The best preparation for tomorrow is doing your best today.', 'H. Jackson Brown, Jr.'],
+	['The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.', 'Helen Keller'],
+	['I can\'t change the direction of the wind, but I can adjust my sails to always reach my destination.', 'Jimmy Dean'],
+	['Start by doing what\'s necessary; then do what\'s possible; and suddenly you are doing the impossible.', 'Francis of Assisi'],
 	['Perfection is not attainable, but if we chase perfection we can catch excellence.', 'Vince Lombardi'],
-	['We must let go of the life we have planned, so as to accept the one that is waiting for us.','Joseph Campbell'],
-	['Try to be a rainbow in someone\'s cloud.','Maya Angelou'],
-	['Nothing is impossible, the word itself says \'I\'m possible\'.','Audrey Hepburn'],
+	['We must let go of the life we have planned, so as to accept the one that is waiting for us.', 'Joseph Campbell'],
+	['Try to be a rainbow in someone\'s cloud.', 'Maya Angelou'],
+	['Nothing is impossible, the word itself says \'I\'m possible\'.', 'Audrey Hepburn'],
 	['If opportunity doesn\'t knock, build a door.', 'Milton Berle'],
 	['We know what we are, but know not what we may be.', 'William Shakespeare'],
 	['Change your thoughts and you change the world.', 'Norman Vincent Peale'],
@@ -22,18 +23,21 @@ var quotes = [
 	['There are two ways of spreading light: to be the candle or the mirror that reflects it.', 'Edith Wharton'],
 	['Memories of our lives, of our work and our deeds will continue in others.', 'Rosa Parks'],
 	['No matter what people tell you, words and ideas can change the world.', 'Robin Williams'],
-	['I believe in living today. Not in yesterday, nor in tomorrow.', 'Loretta Young']
+	['I believe in living today. Not in yesterday, nor in tomorrow.', 'Loretta Young'],
+	['All I can remember were those lonely nights when i was defacing those insecure websites.', 'Bynalab'],
+	['It is nice to be important, but it\'s more important to be nice.', 'John Templeton'],
+	['I\'m learning to accept myself. I\'m still in the process of learning to love who I am. And it\'s been really refreshing and really nice to be able to do that and be okay. I think my fans have brought that out in me.', 'Dua Lipa'],
 ];
 
 // ** - indicates code hasn't been written yet
 
-$(document).ready(function() {
+$(document).ready(function () {
 
 	/**
 	 * random index generator
 	 * @return {num} [random index between zero and 1 less than the length of the quotes array]
 	 */
-	var randIndexGen = function() {
+	var randIndexGen = function () {
 		return Math.floor(Math.random() * quotes.length);
 	};
 
@@ -42,7 +46,7 @@ $(document).ready(function() {
 	 * @param  {num} index - a random index from the randIndexGen function
 	 * @return {string}  an html string that will replace the contents of the '.quote' class
 	 */
-	var quoteGen = function(index) {
+	var quoteGen = function (index) {
 		return "<strong>\"</strong>" + quotes[index][0] + "<strong>\"</strong>";
 	};
 
@@ -51,7 +55,7 @@ $(document).ready(function() {
 	 * @param  {num} index - a random index from the randIndexGen function
 	 * @return {string}       an html string that will replace the contents of the '.author' class
 	 */
-	var authorGen = function(index) {
+	var authorGen = function (index) {
 		return "- <em>" + quotes[index][1] + "</em>";
 	};
 
@@ -60,7 +64,7 @@ $(document).ready(function() {
 	 * @param  {string} quoteText - text passed in from the '.quote' class
 	 * @return {string}            tweet web intent query parameter
 	 */
-	var tweetBtnParamGen = function(quoteText) {
+	var tweetBtnParamGen = function (quoteText) {
 		var expression = /\s+/gi;
 		quoteText = quoteText.replace(expression, "%20");
 		quoteText = "https://twitter.com/intent/tweet?text=" + quoteText;
@@ -68,18 +72,18 @@ $(document).ready(function() {
 		return quoteText;
 	};
 
-	var updateTweet = function(quoteStr) {
+	var updateTweet = function (quoteStr) {
 		$('.twitter-share-button').attr('href', quoteStr);
 	};
 
 	$(".jumbotron").hide().fadeIn(2000);
 	$('.title').hide().delay(1500).fadeIn(2000);
 
- 	var randIndex = randIndexGen();
- 	var quote = quoteGen(randIndex);
- 	var author = authorGen(randIndex);
+	var randIndex = randIndexGen();
+	var quote = quoteGen(randIndex);
+	var author = authorGen(randIndex);
 
- 	$('.quote').html(quote).hide().delay(3000).fadeIn(2000);
+	$('.quote').html(quote).hide().delay(3000).fadeIn(2000);
 	$('.author').html(author).hide().delay(3000).fadeIn(2000);
 	$('#btn-ignite').hide().delay(5000).fadeIn(2000);
 	$('#tweet-btn').hide().delay(5000).fadeIn(2000);
@@ -92,7 +96,7 @@ $(document).ready(function() {
 	quoteVal = tweetBtnParamGen(quoteVal);
 	updateTweet(quoteVal);
 
-	$('#btn-ignite').click(function() {
+	$('#btn-ignite').click(function () {
 
 		//Generate a random index to extract an element within the quotes array
 		var randIndex = randIndexGen();
@@ -106,7 +110,7 @@ $(document).ready(function() {
 		// 2. Append inspiration quote inside of the '.quote' class
 		// 3. Append quote author inside of the '.author' class
 
-		$('.quote').fadeOut('slow', function() {
+		$('.quote').fadeOut('slow', function () {
 			$(this).html(quote).hide().fadeIn(2000);
 			var quoteVal = $(this).text();
 			quoteVal = tweetBtnParamGen(quoteVal);
@@ -114,19 +118,19 @@ $(document).ready(function() {
 			$('#tweet-btn iframe').remove();
 
 			var tweetBtn = $('<a></a>')
-			.addClass('twitter-share-button')
-			.attr({'href': quoteVal, 'data-size': 'large', 'data-hashtags': 'quote'});
+				.addClass('twitter-share-button')
+				.attr({ 'href': quoteVal, 'data-size': 'large', 'data-hashtags': 'quote' });
 
-		    $('#tweet-btn').append(tweetBtn);
-		    twttr.widgets.load(); //function revaulates <a> tags only, not <iframe> tags - hence the reason for line 113
+			$('#tweet-btn').append(tweetBtn);
+			twttr.widgets.load(); //function revaulates <a> tags only, not <iframe> tags - hence the reason for line 113
 		});
-		$('.author').fadeOut('slow', function() {
+		$('.author').fadeOut('slow', function () {
 			$(this).html(author).hide().fadeIn(2000);
 		});
-		$('#btn-ignite').fadeOut('slow', function() {
+		$('#btn-ignite').fadeOut('slow', function () {
 			$(this).hide().delay(2000).fadeIn(2000);
 		});
-		$('#tweet-btn').fadeOut('slow', function() {
+		$('#tweet-btn').fadeOut('slow', function () {
 			$(this).hide().delay(2000).fadeIn(2000);
 		});
 	});
