@@ -26,6 +26,7 @@ const quotes = [
 	['I believe in living today. Not in yesterday, nor in tomorrow.', 'Loretta Young'],
 	['All I can remember were those lonely nights when i was defacing those insecure websites.', 'Bynalab'],
 	['It is nice to be important, but it\'s more important to be nice.', 'John Templeton'],
+	['A lot of hard work is hidden behind nice things.', 'Ralph Lauren'],
 	['I\'m learning to accept myself. I\'m still in the process of learning to love who I am. And it\'s been really refreshing and really nice to be able to do that and be okay. I think my fans have brought that out in me.', 'Dua Lipa'],
 ];
 
