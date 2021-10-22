@@ -28,6 +28,7 @@ const quotes = [
 	['It is nice to be important, but it\'s more important to be nice.', 'John Templeton'],
 	['A lot of hard work is hidden behind nice things.', 'Ralph Lauren'],
 	['I\'m learning to accept myself. I\'m still in the process of learning to love who I am. And it\'s been really refreshing and really nice to be able to do that and be okay. I think my fans have brought that out in me.', 'Dua Lipa'],
+	['It is better to lead from behind and to put others in front, especially when you celebrate victory when nice things occur. You take the front line when there is danger. Then people will appreciate your leadership.', 'Nelson Mandela'],
 ];
 
 // ** - indicates code hasn't been written yet
